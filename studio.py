@@ -1,3 +1,3 @@
 print("TommyChatbot Studio")
 print("Welcome!")
-print("This program makes ")
+print("This program makes TommyChatbot Framework files.")
