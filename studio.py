@@ -1,2 +1,3 @@
 print("TommyChatbot Studio")
-print("")
+print("Welcome!")
+print("This program makes ")
