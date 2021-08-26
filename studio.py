@@ -17,10 +17,10 @@ print("Choose Pickle if you want an insecure, uneditable, file,")
 print("And choose JSON for compatibilty, security, but editablity.")
 format = input("You: ")
 if "JSON" in format:
-    print("Creating JSON file.")
+    print("Creating JSON project.")
     format = "json"
 else:
-    print("Creating Pickle file.")
+    print("Creating Pickle project.")
     format = "pickle"
 print("Now, do you want to let the user choose the name, or choose one name for all users?")
 data = {}
@@ -31,4 +31,14 @@ else:
     print("You get to choose the name!")
     print("But of course you have to choose the name!")
     data['chatbotname'] = input("Enter in the name: ")
-print("Now, do you want ")
+print("Now, do you want your chatbot to have a save file?")
+answer = input("You: ")
+if "Yes" in answer or "yes" in answer:
+    print("OK, but I need to know where that save file is located.")
+    data['savefilep'] = "yes"
+    print("Now, this will be in (yourname).mem")
+    data['savefile'] = input("Name: ")
+    print("This save file will be in the format this project is in.")
+else:
+     data['savefilep'] = "no"
+    
