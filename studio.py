@@ -1,3 +1,5 @@
+import json
+import pickle
 print("TommyChatbot Studio")
 print("Welcome!")
 print("This program makes TommyChatbot Framework files.")
@@ -41,4 +43,15 @@ if "Yes" in answer or "yes" in answer:
     print("This save file will be in the format this project is in.")
 else:
      data['savefilep'] = "no"
-    
+print("Now, let's get to the juicy stuff. The creation.")
+if format == "pickle":
+    print(b"Your data so far: " + pickle.dumps(data))
+    print("Doesn't make any sense, right?")
+else:
+    print("Your data so far: " + json.dumps(data, separators=(',', ':')))
+print("Now, this is REALLY complex.")
+print("When you are done, type in the following: ")
+print("finishchatbotcoding()")
+print("A lot like Python, right?")
+print("Hope you have your TommyChatbot Studio manual with you!")
+print("(Contained in manual.md)")
