@@ -1,5 +1,11 @@
 import json
 import pickle
+modules = []
+try:
+    import requests
+    modules.append("requests")
+except:
+    pass
 print("TommyChatbot Studio")
 print("Welcome!")
 print("This program makes TommyChatbot Framework files.")
